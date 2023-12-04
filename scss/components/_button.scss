@@ -1,0 +1,21 @@
+@use "../base";
+
+.btn {
+    @include base.flexBox(row, center, center);
+    min-width: 170px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 8px;
+
+    &--dark {
+        color: #FFF;
+        background-color: #0F1B4C;
+    }
+
+    &--light {
+        color: #002366;
+        background-color: #FFF;
+    }
+}

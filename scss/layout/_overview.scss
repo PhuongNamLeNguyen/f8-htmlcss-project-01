@@ -1,0 +1,52 @@
+@use "../base";
+
+.overview {
+    padding: 80px 0;
+
+    .container {
+        max-width: 685px;
+    }
+
+    &__text-box {
+        text-align: center;
+        .overview {
+            &__heading {
+
+            }
+
+            &__desc {
+                margin: 20px auto 70px;
+                max-width: 460px;
+            }
+        }
+    }
+
+    &__list {
+        @include base.flexBox(row, space-between, center);
+    }
+
+    &__item {
+        @include base.flexBox(column, center, center);
+    }
+
+    &__name {
+        margin: 26px 0 10px;
+        color: #3B3C45;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+
+    &__link {
+        @include base.flexBox(row, center, center);
+        gap: 8px;
+        color: #0689FF;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    &__cta {
+        @include base.flexBox(row, center, center);
+        margin-top: 50px;
+    }
+}
