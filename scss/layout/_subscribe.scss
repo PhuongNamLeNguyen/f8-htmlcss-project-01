@@ -1,0 +1,39 @@
+@use "../base";
+
+.subscribe {
+    margin: 90px 0 55px;
+    .container {
+        position: relative;
+        border-radius: 20px;
+        background: #063183;
+        padding: 110px 80px;
+    }
+
+    &__text-box {
+        .subscribe {
+            &__heading {
+                color: #FFF;
+            }
+
+            &__desc {
+                margin: 15px 0 20px;
+                color: #FFF;
+            }
+
+            &__cta {
+                display: inline-block;
+
+                .btn {
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateX(-100%);
+    }
+}
